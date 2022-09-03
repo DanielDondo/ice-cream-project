@@ -58,15 +58,19 @@
   text-align: center;
 }
 
-.customer-reviews__foto {
-  display: block;
-  max-width: 100%;
-  height: auto;
+.customer-reviews__thumb-foto {
+  width: 85px;
+  height: 85px;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 32px;
 
   border-radius: 50%;
+  overflow: hidden;
+}
+
+.customer-reviews__foto {
+  display: block;
 }
 
 .customer-reviews__text {
@@ -125,7 +129,7 @@
     margin-bottom: 54px;
   }
 
-  .customer-reviews__foto {
+  .customer-reviews__thumb-foto {
     margin-bottom: 28px;
   }
 
@@ -172,7 +176,7 @@
     border-radius: 24px;
   }
 
-  .customer-reviews__foto {
+  .customer-reviews__thumb-foto {
     margin-bottom: 32px;
   }
 
