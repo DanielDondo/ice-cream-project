@@ -1,1 +1,359 @@
 //!======================  Advantages  ==============================================================!
+
+.about {
+  text-align: center;
+  align-items: center;
+  background-color: #84a178;
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  &__container {
+    position: relative;
+    max-width: 480px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  &__sup-title {
+    margin-bottom: 12px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+    text-transform: uppercase;
+
+    color: #fcfcfc;
+  }
+
+  &__title {
+    width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 54px;
+    font-family: 'Seymour One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 38px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+
+    color: #fcfcfc;
+  }
+
+  &__img {
+    z-index: 10;
+    position: relative;
+    margin-bottom: 40px;
+    border-radius: 50%;
+  }
+
+  &__img-bg {
+    position: absolute;
+    top: 183px;
+    left: 50%;
+    width: 278px;
+    height: 278px;
+    background: linear-gradient(
+        0deg,
+        rgba(248, 210, 78, 0.7),
+        rgba(248, 210, 78, 0.7)
+      ),
+      #d9d9d9;
+    box-shadow: 0px 5.30813px 19.9055px rgba(153, 114, 23, 0.25);
+    border-radius: 50%;
+    transform: translate(-50%);
+  }
+}
+
+.description {
+  padding-left: 30px;
+  padding-right: 30px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+
+  &__text {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 176%;
+    letter-spacing: 0.04em;
+
+    color: #fcfcfc;
+  }
+
+  &__text--tablet {
+    margin-top: 8px;
+    display: none;
+  }
+
+  &__text:first-child {
+    margin-bottom: 4px;
+  }
+}
+
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+  margin-bottom: 40px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 176px;
+  height: 44px;
+  background: #f8d24e;
+  border-radius: 10px;
+
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.29;
+  color: #000000;
+
+  &::after {
+    margin-left: 9px;
+    content: ' ';
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    background-repeat: no-repeat;
+    background-image: url('../img/vector.svg');
+  }
+}
+
+.benefits-list__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.benefits-list__icon {
+  width: 50px;
+  height: 50px;
+  margin-bottom: 16px;
+}
+
+.icon-cow {
+  background-image: url(../img/cow.svg);
+}
+
+.icon-weight {
+  background-image: url(../img/weight.svg);
+}
+
+.icon-ice {
+  background-image: url(../img/ice.svg);
+}
+
+.benefits-list__number {
+  margin-bottom: 18px;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 42px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+
+  color: #fcfcfc;
+}
+
+.benefits-list__text {
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-bottom: 28px;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 170%;
+
+  color: #fcfcfc;
+}
+
+@media screen and (min-width: 768px) {
+  .about__container {
+    max-width: 768px;
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+
+  .about__sup-title {
+    font-weight: 800;
+    font-size: 22px;
+    line-height: 27px;
+    letter-spacing: 0.04em;
+  }
+
+  .about__title {
+    width: 100%;
+    margin-bottom: 79px;
+    font-size: 34px;
+    line-height: 43px;
+    letter-spacing: 0.06em;
+  }
+
+  .about__flex {
+    display: flex;
+  }
+
+  .about__img {
+    margin-right: 32px;
+    margin-bottom: 0;
+    width: 330px;
+    height: 330px;
+  }
+
+  .about__img-bg {
+    top: 132px;
+    left: 197px;
+    width: 330px;
+    height: 330px;
+    border-radius: 50%;
+  }
+
+  .description {
+    padding: 0;
+    width: 334px;
+    text-align: left;
+  }
+
+  .description__text {
+    margin-bottom: 8px;
+  }
+
+  .description__text--tablet {
+    margin-bottom: 48px;
+    display: block;
+  }
+
+  .button {
+    margin-bottom: 56px;
+    margin-left: 0;
+    margin-right: 0;
+    width: 168px;
+    height: 42px;
+  }
+
+  .benefits-list {
+    display: flex;
+    justify-content: center;
+  }
+
+  .benefits-list__item {
+    width: 152px;
+  }
+
+  .benefits-list__item:not(:last-child) {
+    margin-right: 80px;
+  }
+
+  .benefits-list__icon {
+    margin-bottom: 32px;
+  }
+
+  .benefits-list__number {
+    margin-bottom: 16px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 59px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+
+    color: #ffffff;
+  }
+
+  .benefits-list__text {
+    padding-left: 0;
+    padding-right: 0;
+    padding-bottom: 0;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 174%;
+
+    color: #ffffff;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .about__container {
+    max-width: 1200px;
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  .about__sup-title {
+    font-size: 30px;
+    line-height: 37px;
+  }
+
+  .about__title {
+    margin-bottom: 172px;
+    font-size: 36px;
+    line-height: 45px;
+  }
+
+  .about__img {
+    margin: 0;
+    z-index: 10;
+    position: relative;
+    top: -50px;
+    width: 490px;
+    height: 490px;
+  }
+
+  .about__img-bg {
+    top: 176px;
+    left: 261px;
+    width: 490px;
+    height: 490px;
+  }
+
+  .description {
+    width: 463px;
+    text-align: left;
+
+    &__text {
+      margin-bottom: 8px;
+      font-size: 16px;
+    }
+
+    &__text--tablet {
+      margin-top: 0;
+      margin-bottom: 48px;
+    }
+  }
+
+  .button {
+    width: 164px;
+    margin-bottom: 159px;
+  }
+
+  .benefits-list__item {
+    width: 368px;
+  }
+
+  .benefits-list__item:not(:last-child) {
+    margin-right: 32px;
+  }
+
+  .benefits-list__number {
+    font-size: 58px;
+    line-height: 71px;
+  }
+
+  .benefits-list__text {
+    padding-bottom: 0;
+    font-size: 16px;
+    line-height: 28px;
+  }
+}
