@@ -7,9 +7,9 @@ const swiper = new Swiper('.swiper', {
   
     grabCursor: true,
    
-    // autoplay: {
-    //     delay: 4000,
-    // },
+    autoplay: {
+        delay: 4000,
+    },
 
     pagination: {
         el: '.swiper-pagination',
