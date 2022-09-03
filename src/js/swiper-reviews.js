@@ -1,19 +1,21 @@
-import Swiper, { Pagination } from 'swiper';
+import Swiper, { Pagination, Autoplay } from 'swiper';
 
 const swiper = new Swiper('.swiper', {
-    modules: [Pagination],
+    modules: [Pagination, Autoplay],
     
     loop: true,
   
-    pagination: {
-      el: '.swiper-pagination',
-      clickable: true,
-    },
-  
     grabCursor: true,
    
-    autoplay: {
-       delay: 3000,
+    // autoplay: {
+    //     delay: 4000,
+    // },
+
+    pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
     },
-   
+
+    spaceBetween: 40,
+            
 });
