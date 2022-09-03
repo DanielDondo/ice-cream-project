@@ -1,63 +1,66 @@
+<div class="last"></div>
 <section class="customer-reviews">
-  <div class="customer-reviews__wrapper">
-    <h2 hidden>Customer reviews</h2>
+  <div class="customer-reviews__bg">
+    <div class="customer-reviews__wrapper">
+      <h2 hidden>Customer reviews</h2>
 
-    <div class="customer-reviews__thumb">
-      <picture>
-        <source
-          srcset="
-            ../src/images/customer-reviews/many-ice-cream.jpg    1x,
-            ../src/images/customer-reviews/many-ice-cream@2x.jpg 2x
-          "
-          media="(min-width: 1200px)"
-        />
-        <source
-          srcset="
-            ../src/images/customer-reviews/many-ice-cream-tablet.jpg    1x,
-            ../src/images/customer-reviews/many-ice-cream-tablet@2x.jpg 2x
-          "
-          media="(min-width: 768px)"
-        />
-        <source
-          srcset="
-            ../src/images/customer-reviews/many-ice-cream-mobile.jpg    1x,
-            ../src/images/customer-reviews/many-ice-cream-mobile@2x.jpg 2x
-          "
-          media="(max-width: 767px)"
-        />
+      <div class="customer-reviews__thumb">
+        <picture>
+          <source
+            srcset="
+              ../src/images/customer-reviews/many-ice-cream.jpg    1x,
+              ../src/images/customer-reviews/many-ice-cream@2x.jpg 2x
+            "
+            media="(min-width: 1200px)"
+          />
+          <source
+            srcset="
+              ../src/images/customer-reviews/many-ice-cream-tablet.jpg    1x,
+              ../src/images/customer-reviews/many-ice-cream-tablet@2x.jpg 2x
+            "
+            media="(min-width: 768px)"
+          />
+          <source
+            srcset="
+              ../src/images/customer-reviews/many-ice-cream-mobile.jpg    1x,
+              ../src/images/customer-reviews/many-ice-cream-mobile@2x.jpg 2x
+            "
+            media="(max-width: 767px)"
+          />
+          <img
+            src="../src/images/customer-reviews/many-ice-cream.jpg"
+            alt="a lot of ice cream"
+            class="customer-reviews_img"
+          />
+        </picture>
+      </div>
+
+      <div class="customer-reviews__item">
         <img
-          src="../src/images/customer-reviews/many-ice-cream.jpg"
+          class="customer-reviews__foto"
+          srcset="
+            ../src/images/customer-reviews/reviewer-1.jpg    1x,
+            ../src/images/customer-reviews/reviewer-1@2x.jpg 2x
+          "
+          src="../src/images/customer-reviews/reviewer-1.jpg"
           alt="a lot of ice cream"
-          class="customer-reviews_img"
+          width="85"
+          height="85"
         />
-      </picture>
-    </div>
 
-    <div class="customer-reviews__item">
-      <img
-        class="customer-reviews__foto"
-        srcset="
-          ../src/images/customer-reviews/reviewer-1.jpg    1x,
-          ../src/images/customer-reviews/reviewer-1@2x.jpg 2x
-        "
-        src="../src/images/customer-reviews/reviewer-1.jpg"
-        alt="a lot of ice cream"
-        width="85"
-        height="85"
-      />
+        <p class="customer-reviews__text">
+          I love visiting your cafe. You prepare the most delicious ice cream in
+          Los Angeles! In addition, you have beautiful serving, cozy atmosphere
+          and polite staff.
+        </p>
+        <p class="customer-reviews__desc">Emily, Los Angeles</p>
+      </div>
 
-      <p class="customer-reviews__text">
-        I love visiting your cafe. You prepare the most delicious ice cream in
-        Los Angeles! In addition, you have beautiful serving, cozy atmosphere
-        and polite staff.
-      </p>
-      <p class="customer-reviews__desc">Emily, Los Angeles</p>
-    </div>
-
-    <div class="pagination">
-      <div class="pagination__marker pagination__marker_active"></div>
-      <div class="pagination__marker"></div>
-      <div class="pagination__marker"></div>
+      <div class="pagination">
+        <div class="pagination__marker pagination__marker_active"></div>
+        <div class="pagination__marker"></div>
+        <div class="pagination__marker"></div>
+      </div>
     </div>
   </div>
 </section>

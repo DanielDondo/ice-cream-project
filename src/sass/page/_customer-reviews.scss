@@ -1,11 +1,22 @@
 //!======================  Customer-reviews  ========================================================!
+.last {
+  height: 200px;
+  background-color: rgba(132, 161, 120, 1);
+  border: 1px solid black;
+}
 
 .customer-reviews {
+  background-color: rgba(132, 161, 120, 1);
+}
+
+.customer-reviews__bg {
   margin-left: auto;
   margin-right: auto;
 
-  background-color: #ffffff;
-  background-repeat: repeat-y;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+
   background-image: url('/src/images/customer-reviews/reviews-bg-mobile.jpg');
 
   @media screen and (min-device-pixel-ratio: 2),
@@ -17,10 +28,10 @@
 
 .customer-reviews__wrapper {
   position: relative;
-  margin-left: auto;
-  margin-right: auto;
   padding-top: 186px;
   padding-bottom: 425px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 .customer-reviews__thumb {
@@ -81,22 +92,16 @@
   display: none;
 }
 
-@media screen and (min-width: 320px) {
-  .customer-reviews {
-    width: 320px;
-  }
-
-  .customer-reviews__wrapper {
-    width: 280px;
+@media screen and (min-width: 480px) {
+  .customer-reviews__bg {
+    max-width: 480px;
   }
 }
 
 @media screen and (min-width: 768px) {
-  .customer-reviews {
-    width: 704px;
+  .customer-reviews__bg {
+    max-width: 768px;
 
-    background-repeat: no-repeat;
-    background-position: bottom center;
     background-image: url('/src/images/customer-reviews/reviews-bg-tablet.jpg');
 
     @media screen and (min-device-pixel-ratio: 2),
@@ -109,7 +114,8 @@
   .customer-reviews__wrapper {
     padding-top: 223px;
     padding-bottom: 384px;
-    width: 704px;
+    padding-left: 32px;
+    padding-right: 32px;
   }
 
   .customer-reviews__thumb {
@@ -128,6 +134,7 @@
 
   .customer-reviews__text {
     margin-bottom: 32px;
+    width: 704px;
     padding: 28px 80px;
 
     font-weight: 500;
@@ -165,10 +172,9 @@
 }
 
 @media screen and (min-width: 1200px) {
-  .customer-reviews {
-    width: 1200px;
+  .customer-reviews__bg {
+    max-width: 1200px;
 
-    background-position: cover;
     background-image: url('/src/images/customer-reviews/reviews-bg.jpg');
 
     @media screen and (min-device-pixel-ratio: 2),
@@ -181,7 +187,8 @@
   .customer-reviews__wrapper {
     padding-top: 456;
     padding-bottom: 196px;
-    width: 1014px;
+    padding-left: 116px;
+    padding-right: 116px;
   }
 
   .customer-reviews__thumb {
