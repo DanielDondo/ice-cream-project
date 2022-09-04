@@ -1,1 +1,202 @@
 //!======================  Customer-reviews  ========================================================!
+@import '../../node_modules/swiper/swiper.min.css';
+@import '../../node_modules/swiper/swiper-bundle.min.css';
+
+.customer-reviews {
+  background-color: rgba(132, 161, 120, 1);
+}
+
+.customer-reviews__bg {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  background-image: url('/src/images/customer-reviews/reviews-bg-mobile.jpg');
+
+  @media screen and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+    background-image: url('/src/images/customer-reviews/reviews-bg-mobile@2x.jpg');
+  }
+}
+
+.customer-reviews__wrapper {
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 186px;
+  padding-bottom: 384px;
+}
+
+.customer-reviews__thumb {
+  position: absolute;
+  top: -24px;
+  left: 50%;
+  transform: translateX(-50%);
+
+  border-radius: 8px;
+
+  overflow: hidden;
+}
+
+.customer-reviews_img {
+  display: block;
+  height: auto;
+}
+
+.customer-reviews__slide {
+  margin-bottom: 36px;
+  text-align: center;
+}
+
+.customer-reviews__thumb-foto {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 32px;
+  width: 85px;
+  height: 85px;
+
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.customer-reviews__foto {
+  display: block;
+}
+
+.customer-reviews__text {
+  margin-bottom: 30px;
+  padding: 34px 40px;
+
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 2.55;
+
+  background-color: rgba(132, 161, 120, 1);
+  border-radius: 10px;
+}
+
+.customer-reviews__desc {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.86;
+
+  color: #000000;
+}
+
+@media screen and (max-width: 479px) {
+  .customer-reviews__wrapper {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .customer-reviews__bg {
+    background-image: url('/src/images/customer-reviews/reviews-bg-tablet.jpg');
+
+    @media screen and (min-device-pixel-ratio: 2),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+      background-image: url('/src/images/customer-reviews/reviews-bg-tablet@2x.jpg');
+    }
+  }
+
+  .customer-reviews__wrapper {
+    width: 440px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .customer-reviews__wrapper {
+    padding-top: 223px;
+    padding-bottom: 374px;
+    width: 704px;
+  }
+
+  .customer-reviews__thumb {
+    top: -164px;
+
+    border-radius: 18px;
+  }
+
+  .customer-reviews__slide {
+    margin-bottom: 54px;
+  }
+
+  .customer-reviews__thumb-foto {
+    margin-bottom: 28px;
+  }
+
+  .customer-reviews__text {
+    margin-bottom: 32px;
+    padding: 28px 80px;
+
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.86;
+    letter-spacing: 0.04em;
+
+    border-radius: 24px;
+  }
+
+  .customer-reviews__desc {
+    font-size: 16px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .customer-reviews__bg {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1200px;
+
+    background-image: url('/src/images/customer-reviews/reviews-bg.jpg');
+
+    @media screen and (min-device-pixel-ratio: 2),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+      background-image: url('/src/images/customer-reviews/reviews-bg@2x.jpg');
+    }
+  }
+
+  .customer-reviews__wrapper {
+    padding-top: 456;
+    padding-bottom: 186px;
+    width: 968px;
+  }
+
+  .customer-reviews__thumb {
+    top: -94px;
+
+    border-radius: 24px;
+  }
+
+  .customer-reviews__thumb-foto {
+    margin-bottom: 32px;
+  }
+
+  .customer-reviews__text {
+    padding: 39px 109px;
+
+    font-size: 16px;
+  }
+}
+
+// SWIPER-REVIEWS
+
+.swiper {
+  --swiper-pagination-bullet-horizontal-gap: 9px;
+}
+
+.swiper-pagination-bullet {
+  width: 12px;
+  height: 12px;
+
+  background-color: rgba(217, 217, 217, 1);
+  opacity: 1;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: rgba(132, 161, 120, 1);
+}
