@@ -117,14 +117,29 @@
   line-height: 1.29;
   color: #000000;
 
-  &::after {
-    margin-left: 9px;
-    content: ' ';
-    display: inline-block;
-    width: 12px;
-    height: 12px;
-    background-repeat: no-repeat;
-    background-image: url('../img/vector.svg');
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover {
+    background-color: #0a8817;
+  }
+
+  &:focus {
+    background-color: #0a8817;
+    color: #fcfcfc;
+  }
+
+  &:disabled {
+    background-color: #ababab;
+  }
+
+  .button__icon {
+    margin-left: 5px;
+    stroke: currentColor;
+  }
+
+  .button:focus .button__icon {
+    stroke: #fcfcfc;
   }
 }
 
@@ -132,24 +147,26 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-}
 
-.benefits-list__icon {
-  width: 50px;
-  height: 50px;
-  margin-bottom: 16px;
-}
+  &::before {
+    display: block;
+    content: ' ';
+    width: 50px;
+    height: 50px;
+    margin-bottom: 16px;
+  }
 
-.icon-cow {
-  background-image: url(../img/cow.svg);
-}
+  &:nth-child(1)::before {
+    background-image: url(../img/cow.svg);
+  }
 
-.icon-weight {
-  background-image: url(../img/weight.svg);
-}
+  &:nth-child(2)::before {
+    background-image: url(../img/weight.svg);
+  }
 
-.icon-ice {
-  background-image: url(../img/ice.svg);
+  &:nth-child(3)::before {
+    background-image: url(../img/ice.svg);
+  }
 }
 
 .benefits-list__number {
@@ -179,59 +196,63 @@
 }
 
 @media screen and (min-width: 768px) {
-  .about__container {
-    max-width: 768px;
-    padding-left: 32px;
-    padding-right: 32px;
-  }
+  .about {
+    padding-bottom: 204px;
 
-  .about__sup-title {
-    font-weight: 800;
-    font-size: 22px;
-    line-height: 27px;
-    letter-spacing: 0.04em;
-  }
+    &__container {
+      max-width: 768px;
+      padding-left: 32px;
+      padding-right: 32px;
+    }
 
-  .about__title {
-    width: 100%;
-    margin-bottom: 79px;
-    font-size: 34px;
-    line-height: 43px;
-    letter-spacing: 0.06em;
-  }
+    &__sup-title {
+      font-weight: 800;
+      font-size: 22px;
+      line-height: 27px;
+      letter-spacing: 0.04em;
+    }
 
-  .about__flex {
-    display: flex;
-  }
+    &__title {
+      width: 100%;
+      margin-bottom: 79px;
+      font-size: 34px;
+      line-height: 43px;
+      letter-spacing: 0.06em;
+    }
 
-  .about__img {
-    margin-right: 32px;
-    margin-bottom: 0;
-    width: 330px;
-    height: 330px;
-  }
+    &__flex {
+      display: flex;
+    }
 
-  .about__img-bg {
-    top: 132px;
-    left: 197px;
-    width: 330px;
-    height: 330px;
-    border-radius: 50%;
+    &__img {
+      margin-right: 32px;
+      margin-bottom: 0;
+      width: 330px;
+      height: 330px;
+    }
+
+    &__img-bg {
+      top: 132px;
+      left: 197px;
+      width: 330px;
+      height: 330px;
+      border-radius: 50%;
+    }
   }
 
   .description {
     padding: 0;
     width: 334px;
     text-align: left;
-  }
 
-  .description__text {
-    margin-bottom: 8px;
-  }
+    &__text {
+      margin-bottom: 8px;
+    }
 
-  .description__text--tablet {
-    margin-bottom: 48px;
-    display: block;
+    &__text--tablet {
+      margin-bottom: 48px;
+      display: block;
+    }
   }
 
   .button {
@@ -245,77 +266,81 @@
   .benefits-list {
     display: flex;
     justify-content: center;
-  }
 
-  .benefits-list__item {
-    width: 152px;
-  }
+    &__item {
+      width: 152px;
+    }
 
-  .benefits-list__item:not(:last-child) {
-    margin-right: 80px;
-  }
+    &__item:not(:last-child) {
+      margin-right: 80px;
+    }
 
-  .benefits-list__icon {
-    margin-bottom: 32px;
-  }
+    &__icon {
+      margin-bottom: 32px;
+    }
 
-  .benefits-list__number {
-    margin-bottom: 16px;
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 48px;
-    line-height: 59px;
-    letter-spacing: 0.04em;
-    text-transform: uppercase;
+    &__number {
+      margin-bottom: 16px;
+      font-family: 'Montserrat';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 48px;
+      line-height: 59px;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
 
-    color: #ffffff;
-  }
+      color: #ffffff;
+    }
 
-  .benefits-list__text {
-    padding-left: 0;
-    padding-right: 0;
-    padding-bottom: 0;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 174%;
+    &__text {
+      padding-left: 0;
+      padding-right: 0;
+      padding-bottom: 0;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 174%;
 
-    color: #ffffff;
+      color: #ffffff;
+    }
   }
 }
 
 @media screen and (min-width: 1200px) {
-  .about__container {
-    max-width: 1200px;
-    padding-left: 16px;
-    padding-right: 16px;
-  }
+  .about {
+    padding-bottom: 180px;
 
-  .about__sup-title {
-    font-size: 30px;
-    line-height: 37px;
-  }
+    &__container {
+      max-width: 1200px;
+      padding-left: 16px;
+      padding-right: 16px;
+    }
 
-  .about__title {
-    margin-bottom: 172px;
-    font-size: 36px;
-    line-height: 45px;
-  }
+    &__sup-title {
+      font-size: 30px;
+      line-height: 37px;
+    }
 
-  .about__img {
-    margin: 0;
-    z-index: 10;
-    position: relative;
-    top: -50px;
-    width: 490px;
-    height: 490px;
-  }
+    &__title {
+      margin-bottom: 172px;
+      font-size: 36px;
+      line-height: 45px;
+    }
 
-  .about__img-bg {
-    top: 176px;
-    left: 261px;
-    width: 490px;
-    height: 490px;
+    &__img {
+      margin: 0;
+      z-index: 10;
+      position: relative;
+      top: -50px;
+      width: 490px;
+      height: 490px;
+    }
+
+    &__img-bg {
+      top: 176px;
+      left: 261px;
+      width: 490px;
+      height: 490px;
+    }
   }
 
   .description {
@@ -355,5 +380,28 @@
     padding-bottom: 0;
     font-size: 16px;
     line-height: 28px;
+  }
+}
+
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  .benefits-list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    &__item {
+      width: 210px;
+    }
+
+    &__item:last-child {
+      margin-top: 20px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    &__text {
+      width: 180px;
+      padding: 0;
+    }
   }
 }
