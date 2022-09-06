@@ -225,7 +225,7 @@
     .products {
         padding-top: 60px;
         padding-bottom: 60px;
-        background-image: url(../images/section-naturale/products-bg-768.jpg);
+        background-image: url(../images/section-naturale/products-bg-1200.jpg);
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
@@ -234,6 +234,18 @@
         screen and (min-resolution: 192dpi),
         screen and (min-resolution: 2dppx) {
             background-image: url('../images/section-naturale/products-bg-768@2x.jpg');
+        }
+
+        &__container {
+            padding-top: 0;
+            padding-bottom: 0;
+            background-image: none;
+
+            @media screen and (min-device-pixel-ratio: 2),
+            screen and (min-resolution: 192dpi),
+            screen and (min-resolution: 2dppx) {
+                background-image: none;
+            }
         }
 
         &__sup-titel {
