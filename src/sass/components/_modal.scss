@@ -328,9 +328,9 @@
   .modal__product {
     box-sizing: border-box;
     position: absolute;
-    top: 50%;
+    top: 0;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, 0);
     width: 100%;
     padding: 28px 20px 32px;
     outline: #f8d24e;
@@ -771,9 +771,9 @@
   .modal__product {
     box-sizing: border-box;
     position: absolute;
-    top: 50%;
+    top: 0;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, 0);
     width: 528px;
     padding: 32px 20px;
     outline: #f8d24e;
