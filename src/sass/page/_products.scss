@@ -338,6 +338,15 @@
                 margin: 0px 30px 130px 0px;
             }
 
+
+            &:nth-child(2n) {
+                margin-right: 0px;
+            }
+
+            &:nth-last-child(-n + 1) {
+                margin-bottom: 0px;
+            }
+
             &::before {
                 content: "";
                 display: block;
