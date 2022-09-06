@@ -1,0 +1,164 @@
+<div class="modals">
+    <div class="backdrop is-hidden" data-buy>
+        <div class="modal__buy">
+            <button class="modal__button-close">
+                <svg class="modal__button-vector" width="11" height="11" data-buy-close>
+                    <use href="./imgs/symbol-defs.svg#icon-Vector"></use>
+                </svg>
+            </button>
+            <h1 class="modal__title edit-buy">Buy now</h1>
+            <ul class="modal__list">
+                <li class="modal__item">
+                    <p class="modal__description-buy">ice cream</p>
+                    <picture>
+                        <source srcset="./imgs/icecream-min.png 1x, ./imgs/icecream-min@2.png 2x" />
+                        <img class="modal__img-cream" src="./imgs/icecream-min.png" alt="" width="132" height="132">
+                    </picture>
+                </li>
+                <li class="modal__item">
+                    <p class="modal__description-buy">ice coffee</p>
+                    <picture>
+                        <source srcset="./imgs/icemilk-min.png 1x, ./imgs/icemilk-min@2.png 2x" />
+                        <img class="modal__img-cofee" src="./imgs/icemilk-min.png" alt="" width="132" height="132">
+                    </picture>
+                </li>
+                <li class="modal__item">
+                    <p class="modal__description-buy">milkshake</p>
+                    <picture>
+                        <source srcset="./imgs/milktea-min.png 1x, ./imgs/milktea-min@2.png 2x" />
+                        <img class="modal__img-shake" src="./imgs/milktea-min.png" alt="" width="132" height="132">
+                    </picture>
+                </li>
+            </ul>
+            <form class="modal__contact-form edit-form">
+                <input type="text" class="modal__form-input" name="user_name" placeholder="Name" required minlength="2"
+                    pattern="^[a-zA-Zа-яА-ЯіІїЇ]+$" />
+                <input type="tel" class="modal__form-input" name="user_phone" required placeholder="Phone"
+                    pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}" title="xxx-xxx-xx-xx" />
+                <textarea name="user_message" class="modal__form-message" placeholder="Comment"></textarea>
+                <button type="button" class="modal__button">Submit</button>
+            </form>
+        </div>
+    </div>
+    <div class="backdrop is-hidden" data-tradition>
+        <div class="modal__tradition">
+            <button class="modal__button-close" data-tradition-close>
+                <svg class="modal__button-vector" width="11" height="11">
+                    <use href="./imgs/symbol-defs.svg#icon-Vector"></use>
+                </svg>
+            </button>
+            <h1 class="modal__title">How it’s made?</h1>
+            <video class="modal__video" width="448" height="205" src="https://www.w3schools.com/html/mov_bbb.mp4"
+                controls></video>
+            <p class="modal__description">
+                Lorem ipsum dolor sit amet,
+                consectetur adipiscing elit, sed do eiusmod tempor
+                incididunt ut labore et Lorem ipsum dolor sit amet,
+                consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+            </p>
+        </div>
+    </div>
+    <div class="backdrop is-hidden" data-contacts>
+        <div class="modal__contacts">
+            <button class="modal__button-close" data-contacts-close>
+                <svg class="modal__button-vector" width="11" height="11">
+                    <use href="./imgs/symbol-defs.svg#icon-Vector"></use>
+                </svg>
+            </button>
+            <h1 class="modal__title">Our Locations</h1>
+            <picture>
+                <source srcset="./imgs/map-mob-min.jpg 1x, ./imgs/map-mob-min@2.jpg 2x" media="(max-width: 479px)" />
+                <source srcset="./imgs/map-min.jpg 1x, ./imgs/map-min@2.jpg 2x" media="(min-width: 480px)" />
+                <img class="modal__img-map" src="./imgs/map-min.jpg" alt="">
+            </picture>
+            <button type="button" class="modal__button">Open map</button>
+        </div>
+    </div>
+    <div class="backdrop is-hidden" data-franchise>
+        <div class="modal__franchise">
+            <button class="modal__button-close" data-franchise-close>
+                <svg class="modal__button-vector" width="11" height="11">
+                    <use href="./imgs/symbol-defs.svg#icon-Vector"></use>
+                </svg>
+            </button>
+            <h1 class="modal__title edit-franchise">Thank you for your interest in owning an Ice Cream shop</h1>
+            <p class="modal__description">
+                Due to the overwhelming volume of franchise requests we are not accepting new franchisee applications at
+                this time.
+                Once the application process resumes, we will contact you for further information.
+                Please fill out the contact information below and we will reach out for additional information. We
+                appreciate your patience.
+            </p>
+            <form class="modal__contact-form">
+                <input type="text" class="modal__form-input" name="user_name" placeholder="Name" required minlength="2"
+                    pattern="^[a-zA-Zа-яА-ЯіІїЇ]+$" />
+                <input type="tel" class="modal__form-input" name="user_phone" required placeholder="Phone"
+                    pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}" title="xxx-xxx-xx-xx" />
+                <input type="email" class="modal__form-input" name="user_email" required placeholder="Email" />
+                <textarea name="user_message" class="modal__form-message" placeholder="Comment"></textarea>
+                <button type="button" class="modal__button">Submit</button>
+            </form>
+        </div>
+    </div>
+    <div class="backdrop is-hidden" data-product>
+        <div class="modal__product">
+            <button class="modal__button-close" data-product-close>
+                <svg class="modal__button-vector" width="11" height="11">
+                    <use href="./imgs/symbol-defs.svg#icon-Vector"></use>
+                </svg>
+            </button>
+            <h1 class="modal__title edit-product">
+                Chololate icecream
+            </h1>
+            <picture class="modal__picture">
+                <source srcset="./imgs/icecream-min.png 1x, ./imgs/icecream-min@2.png 2x" />
+                <img class="modal__img-choko" src="./imgs/icecream-min.png" alt="" width="132" height="132">
+            </picture>
+            <ul class="modal__list-compound">
+                <li class="modal__pcst">
+                    <div class="modal__circle">320</div>
+                    <p class="modal__circle-text">kcal</p>
+                </li>
+                <li class="modal__pcst">
+                    <div class="modal__circle">4g</div>
+                    <p class="modal__circle-text">Prot</p>
+                </li>
+                <li class="modal__pcst">
+                    <div class="modal__circle">8,2g</div>
+                    <p class="modal__circle-text">Fats</p>
+                </li>
+                <li class="modal__pcst">
+                    <div class="modal__circle">40,4g</div>
+                    <p class="modal__circle-text">Carbs</p>
+                </li>
+            </ul>
+            <h3 class="modal__pre-title">Ingredients</h3>
+            <div class="modal__menu">
+                <ul class="modal__range">
+                    <li class="modal__product-name">Milk</li>
+                    <li class="modal__product-name">Belgian chocolate</li>
+                    <li class="modal__product-name">Cream</li>
+                    <li class="modal__product-name">Cocoa powder</li>
+                    <li class="modal__product-name">Sugar</li>
+                    <li class="modal__product-name">Vanilla sugar</li>
+                </ul>
+                <ul class="modal__range-2">
+                    <li class="modal__product-widht">100ml</li>
+                    <li class="modal__product-widht">20g</li>
+                    <li class="modal__product-widht">150ml</li>
+                    <li class="modal__product-widht">30g</li>
+                    <li class="modal__product-widht">40g</li>
+                    <li class="modal__product-widht">10g</li>
+                </ul>
+            </div>
+            <form class="modal__contact-form edit-compound">
+                <input type="text" class="modal__form-input" name="user_name" placeholder="Name" required minlength="2"
+                    pattern="^[a-zA-Zа-яА-ЯіІїЇ]+$" />
+                <input type="tel" class="modal__form-input" name="user_phone" required placeholder="Phone"
+                    pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}" title="xxx-xxx-xx-xx" />
+                <textarea name="user_message" class="modal__form-message" placeholder="Comment"></textarea>
+                <button type="button" class="modal__button">Submit</button>
+            </form>
+        </div>
+    </div>
+</div>

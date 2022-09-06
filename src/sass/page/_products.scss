@@ -223,19 +223,17 @@
 
 @media (max-width: 1199px) {
     .products {
-        &__container {
-            padding-top: 60px;
-            padding-bottom: 60px;
-            background-image: url(../images/section-naturale/products-bg-768.jpg);
-            background-repeat: no-repeat;
-            background-position: center;
-            background-size: cover;
+        padding-top: 60px;
+        padding-bottom: 60px;
+        background-image: url(../images/section-naturale/products-bg-768.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
 
-            @media screen and (min-device-pixel-ratio: 2),
-            screen and (min-resolution: 192dpi),
-            screen and (min-resolution: 2dppx) {
-                background-image: url('../images/section-naturale/products-bg-768@2x.jpg');
-            }
+        @media screen and (min-device-pixel-ratio: 2),
+        screen and (min-resolution: 192dpi),
+        screen and (min-resolution: 2dppx) {
+            background-image: url('../images/section-naturale/products-bg-768@2x.jpg');
         }
 
         &__sup-titel {
@@ -303,19 +301,17 @@
 
 @media (max-width: 767px) {
     .products {
-        &__container {
-            padding-top: 60px;
-            padding-bottom: 60px;
-            background-image: url(../images/section-naturale/products-bg-768.jpg);
-            background-repeat: no-repeat;
-            background-position: center;
-            background-size: cover;
+        padding-top: 60px;
+        padding-bottom: 60px;
+        background-image: url(../images/section-naturale/products-bg-768.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
 
-            @media screen and (min-device-pixel-ratio: 2),
-            screen and (min-resolution: 192dpi),
-            screen and (min-resolution: 2dppx) {
-                background-image: url('../images/section-naturale/products-bg-768@2x.jpg');
-            }
+        @media screen and (min-device-pixel-ratio: 2),
+        screen and (min-resolution: 192dpi),
+        screen and (min-resolution: 2dppx) {
+            background-image: url('../images/section-naturale/products-bg-768@2x.jpg');
         }
 
         &__list {
@@ -353,19 +349,17 @@
 
 @media (max-width: 590px) {
     .products {
-        &__container {
-            padding-top: 60px;
-            padding-bottom: 60px;
-            background-image: url(../images/section-naturale/products-bg-320.jpg);
-            background-repeat: no-repeat;
-            background-position: center;
-            background-size: cover;
+        padding-top: 60px;
+        padding-bottom: 60px;
+        background-image: url(../images/section-naturale/products-bg-320.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
 
-            @media screen and (min-device-pixel-ratio: 2),
-            screen and (min-resolution: 192dpi),
-            screen and (min-resolution: 2dppx) {
-                background-image: url('../images/section-naturale/products-bg-320@2x.jpg');
-            }
+        @media screen and (min-device-pixel-ratio: 2),
+        screen and (min-resolution: 192dpi),
+        screen and (min-resolution: 2dppx) {
+            background-image: url('../images/section-naturale/products-bg-320@2x.jpg');
         }
 
         &__list {
@@ -407,19 +401,17 @@
 
 @media (max-width: 479px) {
     .products {
-        &__container {
-            padding-top: 60px;
-            padding-bottom: 60px;
-            background-image: url(../images/section-naturale/products-bg-320.jpg);
-            background-repeat: no-repeat;
-            background-position: center;
-            background-size: cover;
+        padding-top: 60px;
+        padding-bottom: 60px;
+        background-image: url(../images/section-naturale/products-bg-320.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
 
-            @media screen and (min-device-pixel-ratio: 2),
-            screen and (min-resolution: 192dpi),
-            screen and (min-resolution: 2dppx) {
-                background-image: url('../images/section-naturale/products-bg-320@2x.jpg');
-            }
+        @media screen and (min-device-pixel-ratio: 2),
+        screen and (min-resolution: 192dpi),
+        screen and (min-resolution: 2dppx) {
+            background-image: url('../images/section-naturale/products-bg-320@2x.jpg');
         }
     }
 
@@ -431,7 +423,7 @@
         }
 
         &__body {
-            width: 100%;
+            width: 280px;
         }
     }
 
