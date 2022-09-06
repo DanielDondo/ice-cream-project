@@ -21,7 +21,7 @@
   visibility: hidden;
 }
 
-@media screen and (max-width: 479px) {
+@media screen and (max-width: 567px) {
   /*===================buy====================*/
   .edit-form {
     margin-top: 0px;
@@ -44,9 +44,9 @@
   .modal__buy {
     box-sizing: border-box;
     position: absolute;
-    top: 50%;
+    top: 0;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, 0);
     width: 100%;
     /*min-height: 644px;*/
     padding: 28px 28px;
@@ -99,7 +99,6 @@
     border-radius: 50%;
     padding-bottom: 8px;
     margin-top: -20px;
-    /*    margin-top: -20px;*/
   }
 
   .modal__img-cofee {
@@ -459,7 +458,7 @@
 }
 
 /*===================/Chololate icecream====================*/
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 568px) {
   /*===================buy====================*/
 
   .modal__buy {
