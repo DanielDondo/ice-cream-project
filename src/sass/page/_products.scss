@@ -1,16 +1,15 @@
 //!======================  Products  ================================================================!
 .products {
     background-color: #84A278;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background-image: url(../images/section-naturale/products-bg-1920.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 
 
-    &__container {
-        padding-top: 60px;
-        padding-bottom: 60px;
-        background-image: url(../images/section-naturale/products-bg-1200.jpg);
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: cover;
-    }
+    // &__container {}
 
     &__sup-titel {
         font-weight: 800;
