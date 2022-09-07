@@ -74,11 +74,15 @@
             width: 302px;
             height: 317px;
 
-            // background-position: ;
             position: absolute;
+            top: -162px;
+            left: 34px;
+
+
             background-repeat: no-repeat;
+            background-position: center;
             background-size: cover;
-            transform: translate(3vh, -19vh);
+
         }
 
         &:nth-child(1)::before {
@@ -281,9 +285,9 @@
                 height: 208px;
 
                 position: absolute;
-                background-repeat: no-repeat;
-                background-size: cover;
-                transform: translate(1vh, -12vh);
+
+                top: -108px;
+                left: 12px;
             }
         }
 
@@ -326,6 +330,10 @@
             background-image: url('../images/section-naturale/products-bg-768@2x.jpg');
         }
 
+        &__titel {
+            margin: 0px 0px 148px 0px;
+        }
+
         &__list {
             display: flex;
             flex-wrap: wrap;
@@ -348,15 +356,10 @@
             }
 
             &::before {
-                content: "";
-                display: block;
-                width: 200px;
-                height: 208px;
-
                 position: absolute;
-                background-repeat: no-repeat;
-                background-size: cover;
-                transform: translate(2vh, -12vh);
+
+                top: -108px;
+                left: 25px;
             }
         }
 
@@ -391,6 +394,36 @@
     }
 
     .list-card {
+        &__items {
+            &::before {
+                width: 200px;
+                height: 208px;
+                position: absolute;
+
+
+                top: -104px;
+                left: 40px;
+
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: cover;
+            }
+
+            &:nth-child(1)::before {
+                background-image: url(../images/section-naturale/section-naturale-320.png);
+            }
+
+            &:nth-child(2)::before {
+                background-image: url(../images/section-naturale/section-naturale-321.png);
+            }
+
+            &:nth-child(3)::before {
+                background-image: url(../images/section-naturale/section-naturale-322.png);
+            }
+        }
+    }
+
+    .list-card {
         display: flex;
         justify-content: center;
         align-items: center;
@@ -398,18 +431,6 @@
         &__items {
             &:not(:last-child) {
                 margin: 0px 0px 130px 0px;
-            }
-
-            &::before {
-                content: "";
-                display: block;
-                width: 200px;
-                height: 208px;
-
-                position: absolute;
-                background-repeat: no-repeat;
-                background-size: cover;
-                transform: translate(4vh, -12vh);
             }
         }
 
