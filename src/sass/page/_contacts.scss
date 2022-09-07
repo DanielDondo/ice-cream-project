@@ -422,7 +422,8 @@
         }
 
         &__body-info {
-            width: 280px;
+            width: 270px;
+            height: 465px;
             padding: 40px 32px;
         }
 
@@ -430,7 +431,7 @@
             justify-content: center;
             flex-direction: column;
 
-            padding: 900px 0px 0px 0px;
+            padding: 940px 0px 0px 0px;
         }
 
         &__item-btn {
@@ -548,11 +549,13 @@
         }
 
         &__body-info {
+            width: 270px;
+            height: auto;
             padding: 35px 32px 20px;
         }
 
         &__body-btn {
-            padding: 960px 0px 0px 0px;
+            padding: 987px 0px 0px 0px;
         }
     }
 }
