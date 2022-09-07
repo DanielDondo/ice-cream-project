@@ -220,7 +220,7 @@
     }
 }
 
-@media (max-width: 856px){
+@media (max-width: 856px) {
     .footer {
         &::before {
             top: 222px;
@@ -233,6 +233,7 @@
         &::before {
             top: 260px;
         }
+
         &__top {
             flex-direction: column;
             justify-content: center;
@@ -304,6 +305,12 @@
 }
 
 @media (max-width: 480px) {
+    .footer {
+        &::before {
+            top: 282px;
+        }
+    }
+
     .top-footer {
         &__info {
             width: 100%;
