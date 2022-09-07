@@ -548,6 +548,9 @@
         screen and (min-resolution: 2dppx) {
             background-image: url('../images/header/header-bg-768@2x.png');
         }
+        &__back {
+            display: none;
+        }
     }
 
     .info-content-header {
